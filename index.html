@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gaurav - Portfolio Website</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgba(0, 0, 33, 2);
+      color: aliceblue;
+      font-family: "Poppins", sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 5rem;
+      background-color: rgb(2, 2, 40);
+    }
+    nav li {
+      list-style-type: none;
+      margin: 0 1rem;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: aliceblue;
+    }
+    nav ul li a:hover {
+      text-decoration: none;
+      color: rgb(153, 153, 226);
+      font-size: 1.02rem;
+    }
+    .left {
+      font-size: 2rem;
+    }
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      /* height: 80vh; */
+      margin: 4rem 0;
+    }
+    .firstSection > div {
+      width: 40%;
+      /* text-align: center; */
+    }
+    .leftSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    .rightSection {
+      /* background-color: red; */
+      margin-right: 3rem;
+    }
+    .rightSection img {
+      width: 37rem;
+      /* margin-right: 8rem; */
+    }
+
+    .color-purple {
+      color: blueviolet;
+    }
+    .text-grey {
+      color: grey;
+    }
+    main hr {
+      border: 0;
+      background: #9c97f1;
+      height: 2px;
+      margin: 2rem 5rem;
+    }
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
+    .secondSection h1 {
+      font-size: 1.9rem;
+    }
+    .verticalsroof {
+      background: aliceblue;
+      height: 2px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .secondSection .vertical {
+      height: 6rem;
+      width: 2px;
+      background-color: aliceblue;
+      margin: 1rem;
+    }
+    .imgbox {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 2rem 0;
+    }
+    .imgbox img {
+      width: 7rem;
+    }
+    .secondSection .details {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 8rem;
+    }
+    .secondSection .details div {
+      /* font-size: 0.8rem; */
+      width: 12rem;
+      /* margin: 0 3rem; */
+    }
+
+    footer {
+      background-color: #212121;
+      padding-bottom: 1rem;
+      /* text-align: center; */
+    }
+    footer > .footer-rights {
+      text-align: center;
+    }
+    .footer {
+      /* background-color: #212121; */
+      margin-top: 10rem;
+      height: 8rem;
+      padding: 2rem 4rem;
+      display: flex;
+      justify-content: space-around;
+    }
+    .footer > div {
+      width: 15rem;
+    }
+    footer ul li {
+      list-style: none;
+    }
+    .btn {
+      padding: 0.7rem;
+      font-size: large;
+      color: rgb(14, 45, 72);
+      background-color: #f5da47;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Gaurav's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="color-purple">Gaurav</span> and
+          <div>I am a <span id="element" class="color-purple"></span></div>
+          <div class="buttons">
+            <button class="btn" type="button">Download Resume</button>
+            <button class="btn" type="button">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="./asset/dev.png" alt="dev image" />
+        </div>
+      </section>
+      <hr />   
+      <section class="secondSection">
+        <h1 class="text-grey">What I have done so far</h1>
+        <!-- <h2>Work Experience</h2> -->
+        <div class="imgbox">
+          <img src="./asset/file-type-html.svg" alt="developer img" />
+          <img src="./asset/javascript.svg" alt="developer img" />
+          <img src="./asset/node-js.svg" alt="developer img" />
+          <img src="./asset/express-js-icon.svg" alt="developer img" />
+          <img src="./asset/mongodb.svg" alt="developer img" />
+        </div>
+        <div class="verticalsroof">
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+        </div>
+        <div class="details">
+          <div>
+            <h3>HTML</h3>
+            <h4>(2020 - 2021)</h4> <br>
+            <span
+              >In 2020 I started Learning HTML and CSS to get basic knowledge of Web Development and for next 2 years I refined these two skills to make fundamentals strong. </span
+            >
+          </div>
+          <div>
+            <h3>JavaScript</h3>
+            <h4>(2021 - 2022)</h4> <br>
+            <span
+              >As usage of JavaScript in Web Developement is exponentially growing in market so  in 2021 I begin to Learn JavaScript along with HTML and CSS to make my web projects look and feel more interactive. </span
+            >
+          </div>
+          <div>
+            <h3>Node.js </h3>
+            <h4>(2022 - Now)</h4>
+            <span
+              >After getting my JavaScript fundamentals clear I jumped onto Node.js to learn how can I make server with http module in JS for the backend, since very early I was curious about backend developement and how api's work and all. </span
+            >
+          </div>
+          <div>
+            <h3>Express.js</h3>
+            <h4>(2022 - 2023)</h4>
+            <span
+              >I completed basics of http module so that to become fundamentally strong in Express.js and make efficient servers for my backend</span
+            >
+          </div>
+          <div>
+            <h3>MongoDb</h3>
+            <h4>(2023 - Now)</h4>
+            <span
+              >After Express I heard about MongoDb of MERN Stack and begin to use it as my Database so that to complete Full Stack Web Development </span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer1">
+          <h3>Gaurav's Developer Portfolio</h3>
+        </div>
+        <div class="footer2">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer3">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer4">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &copy; gauravsportfolio.com | All rights are reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Video Editor"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
